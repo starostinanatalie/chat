@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/necolas.github.io_normalize.css_8.0.1_normalize.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">Сервис комментариев со спам фильтром</h1>
+    <div class="comment">
+      <h2 class="subtitle">Оставьте ваш комментарий</h2>
+      <div>
+        <div class="form">
+          <label for="name">Введите ваше имя</label>
+          <br />
+          <input id="name" type="text" size="60" autocomplete="name" />
+        </div>
+        <div class="form">
+          <label for="avatar">Введите ссылку на ваш аватар</label>
+          <br />
+          <input id="avatar" type="url" size="60" />
+        </div>
+        <div class="form">
+          <label for="textComment">Напишите ваш комментарий</label>
+          <br />
+          <textarea rows="15" cols="63" id="textComment"></textarea>
+        </div>
+        <button id="button">Отправить</button>
+      </div>
+    </div>
+    <div class="chat">
+      <h2 class="subtitle">Чат</h2>
+      <ul class="chatlist" id="chatlist"></ul>
+    </div>
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>

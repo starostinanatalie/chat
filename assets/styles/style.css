@@ -54,25 +54,26 @@ button {
 
 .chatItem {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "name text"
-    "avatar text";
-    justify-content: space-between;
-    align-content: center;
+    "avatar name date"
+    "text text text";
+    /* justify-content: center;
+    align-content: space-between; */
     color: aqua;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
     margin-right: 5%;
     border-bottom: 1px solid aqua;
+    padding-bottom: 10px;
 
 }
 
 .chatAvatar {
     grid-area: avatar;
-    width: 100px;
+    width: 75px;
 }
 
 .chatName {
@@ -81,5 +82,14 @@ button {
 
 .chatText {
     grid-area: text;
-    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.chatDate {
+    grid-area: date;
+    justify-self: end;
+}
+
+.invisible {
+    display: none;
 }

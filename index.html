@@ -16,7 +16,14 @@
       <h2 class="subtitle">Оставьте ваш комментарий</h2>
       <div>
         <div class="form">
-          <label for="name">Введите ваше имя</label>
+          <label>Показывать ваше имя? </label>
+          <label for="yes"> Yes</label>
+          <input id="yes" type="radio" name="question" checked />
+          <label for="no"> No</label>
+          <input id="no" type="radio" name="question" />
+          <br />
+          <br />
+          <label id="labelForName" for="name">Введите ваше имя</label>
           <br />
           <input id="name" type="text" size="60" autocomplete="name" />
         </div>
